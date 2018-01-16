@@ -21,7 +21,7 @@ class KubePs1 < Formula
 
       For Bash:
       source "#{opt_prefix}/kube-ps1.sh"
-      PS1="[\u@\h \W \$(kube_ps1)]\$ "
+      PS1='[\\u@\h \W $(kube_ps1)]\$ '
     EOS
   end
 
