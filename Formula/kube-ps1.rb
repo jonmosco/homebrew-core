@@ -10,7 +10,7 @@ class KubePs1 < Formula
   depends_on "kubernetes-cli" => :recommended
 
   def install
-    prefix.install "kube-ps1.sh", "README.md"
+    prefix.install "kube-ps1.sh"
   end
 
   def caveats; <<~EOS
@@ -21,7 +21,7 @@ class KubePs1 < Formula
 
       For Bash:
       source "#{opt_prefix}/kube-ps1.sh"
-      PS1='[\\u@\h \W $(kube_ps1)]\$ '
+      PS1="[\$(kube_ps1)]\$ "
     EOS
   end
 
