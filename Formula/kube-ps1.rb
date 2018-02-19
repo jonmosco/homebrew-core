@@ -10,7 +10,7 @@ class KubePs1 < Formula
   depends_on "kubernetes-cli" => :recommended
 
   def install
-    prefix.install "kube-ps1.sh"
+    share.install "kube-ps1.sh"
   end
 
   def caveats; <<~EOS
