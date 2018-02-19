@@ -26,7 +26,7 @@ class KubePs1 < Formula
   end
 
   test do
-    kubeon = ". #{opt_prefix}/kube-ps1.sh && echo $KUBE_PS1_SHELL"
+    kubeon = ". #{opt_share}/kube-ps1.sh && echo $KUBE_PS1_SHELL"
     assert_equal "zsh", shell_output("zsh -c '#{kubeon}'").chomp
   end
 end
