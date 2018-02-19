@@ -16,11 +16,11 @@ class KubePs1 < Formula
   def caveats; <<~EOS
     Make sure kube-ps1 is loaded from your ~/.zshrc or ~/.bashrc:
       For zsh:
-      source "#{opt_prefix}/kube-ps1.sh"
+      source "#{opt_share}/kube-ps1.sh"
       PROMPT='$(kube_ps1) $PROMPT'
 
       For Bash:
-      source "#{opt_prefix}/kube-ps1.sh"
+      source "#{opt_share}/kube-ps1.sh"
       PS1="[\$(kube_ps1)]\$ "
     EOS
   end
