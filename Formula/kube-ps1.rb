@@ -29,6 +29,6 @@ class KubePs1 < Formula
     # Test that the file exists
     assert_predicate testpath/"#{opt_prefix}/kube-ps1.sh", :exist?
     kubeon = ". #{opt_prefix}/kube-ps1.sh && echo $KUBE_PS1_SHELL"
-    assert_match "zsh", shell_output("zsh -c '#{kubeon}'")
+    assert_equal "zsh", shell_output("zsh -c '#{kubeon}'")
   end
 end
