@@ -1,8 +1,8 @@
 class KubePs1 < Formula
   desc "Kubernetes prompt info for bash and zsh"
   homepage "https://github.com/jonmosco/kube-ps1"
-  url "https://github.com/jonmosco/kube-ps1/archive/0.4.0.tar.gz"
-  sha256 "0133c5b41609ab8b4e0715f6581a8ee006a979028ddd697bab7a28c02f903db5"
+  url "https://github.com/jonmosco/kube-ps1/releases/tag/0.6.0"
+  sha256 "368012e3164f8a3bbe97274802ac4410f1213f01"
   head "https://github.com/jonmosco/kube-ps1.git"
 
   bottle :unneeded
