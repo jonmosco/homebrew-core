@@ -3,14 +3,14 @@ require "language/node"
 class Fx < Formula
   desc "Command-line JSON processing tool"
   homepage "https://github.com/antonmedv/fx"
-  url "https://registry.npmjs.org/fx/-/fx-11.1.0.tgz"
-  sha256 "1751d347b1d252abb1977f46b8347cb7f257a776f81d912e15f70fc68ebf320c"
+  url "https://registry.npmjs.org/fx/-/fx-12.0.2.tgz"
+  sha256 "b17a98ef6d8db63b7fa29ddb5298ffb35e38929bb08c74fe9c27047a9f322854"
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7ec14c7dcfd4a2243e42285ff62e6f2aaf1a798af8bbc3528454e7e39d2d17d4" => :mojave
-    sha256 "308b9a104d108613b66901d2437c7d33923ae5e397a89289e109b155a73cdd81" => :high_sierra
-    sha256 "f0e50d1e836fe0336806d93d229f507dee0c923b18284c5630c666e15f270ba4" => :sierra
+    sha256 "9803ce4be6a5c89ed0c0c04aa5728389aecf58624a572da98daf7153d3675c5a" => :mojave
+    sha256 "665ca558394b6803651a48d0036dd5e85a36c32612677645da61eb33be682661" => :high_sierra
+    sha256 "6cfcc6ef71fb6d81fbcdd0ee318524f02ee60a6e5ec978255afc0b3672bd5904" => :sierra
   end
 
   depends_on "node"
